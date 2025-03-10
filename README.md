@@ -1,11 +1,10 @@
 # Py-Automator - Declarative CLI Automation Framework
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-BSD-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: BSD-3](https://img.shields.io/badge/License-BSD--3-blue.svg)](https://opensource.org/licenses/MIT)
 
 A modern Python framework for building declarative command-line interfaces with nested subcommands, designed for automation workflows and build systems.
 
 ## Features
-
 - 🚀 **Declarative Command Tree** - Define CLI structure through simple nested dictionaries
 - 🛠 **Zero Boilerplate** - Focus on business logic, not argument parsing
 - 📚 **Automatic Help Generation** - Built-in help system with hierarchical documentation

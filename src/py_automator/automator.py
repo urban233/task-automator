@@ -1,9 +1,29 @@
+"""
+#A* -------------------------------------------------------------------
+#B* This file contains source code for the Py-Automator python package.
+#-* Python module for the automator class.
+#-* -------------------------------------------------------------------
+#C* Copyright 2025 by Martin Urban.
+#D* -------------------------------------------------------------------
+#E* It is unlawful to modify or remove this copyright notice.
+#F* -------------------------------------------------------------------
+#G* Please see the accompanying LICENSE file for further information.
+#H* -------------------------------------------------------------------
+#I* Additional authors of this source file include:
+#-*
+#-*
+#-*
+#Z* -------------------------------------------------------------------
+"""
 import argparse
 from typing import Dict, Any
 
 
 class Automator:
-  def __init__(self, command_tree: Dict[str, Any]):
+  """Core class for building the automation CLI."""
+
+  def __init__(self, command_tree: Dict[str, Any]) -> None:
+    """Constructor."""
     self.parser = argparse.ArgumentParser(description="Build automation tool")
     self.command_tree = command_tree
     self._configure_parser(self.parser, self.command_tree)
