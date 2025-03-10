@@ -16,7 +16,9 @@
 #Z* -------------------------------------------------------------------
 """
 import argparse
-from typing import Dict, Any
+from typing import Any
+from typing import Dict
+from typing import Optional
 
 
 class Automator:
@@ -28,7 +30,8 @@ class Automator:
     self.command_tree = command_tree
     self._configure_parser(self.parser, self.command_tree)
 
-  def _configure_parser(self, parent, node: Dict[str, Any], path: list = None):
+  def _configure_parser(self, parent, node: Dict[str, Any], path: Optional[list] = None) -> None:
+    """Configures the automation tree parser."""
     path = path or []
     subparsers = parent.add_subparsers(
       title='subcommands',
@@ -50,7 +53,8 @@ class Automator:
           path + [cmd_name]
         )
 
-  def run(self):
+  def run(self) -> None:
+    """Run method that executes any given automation function."""
     args = self.parser.parse_args()
     if hasattr(args, 'func'):
       args.func(None)  # Pass dummy value that will be ignored
