@@ -35,7 +35,7 @@ class Automator:
     path = path or []
     subparsers = parent.add_subparsers(
       title='subcommands',
-      dest=' '.join(path)
+      dest='command'
     )
 
     for cmd_name, cmd_config in node.items():
@@ -44,7 +44,7 @@ class Automator:
       if "func" in cmd_config:
         # Wrap function to ignore arguments
         original_func = cmd_config["func"]
-        parser.set_defaults(func=lambda _: original_func())
+        parser.set_defaults(func=original_func)
 
       if "subcommands" in cmd_config:
         self._configure_parser(
@@ -57,6 +57,6 @@ class Automator:
     """Run method that executes any given automation function."""
     args = self.parser.parse_args()
     if hasattr(args, 'func'):
-      args.func(None)  # Pass dummy value that will be ignored
+      args.func()
     else:
       self.parser.print_help()
