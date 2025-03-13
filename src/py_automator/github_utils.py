@@ -1,3 +1,20 @@
+"""
+#A* -------------------------------------------------------------------
+#B* This file contains source code for the Py-Automator python package.
+#-* Python module for github helper functions.
+#-* -------------------------------------------------------------------
+#C* Copyright 2025 by Martin Urban.
+#D* -------------------------------------------------------------------
+#E* It is unlawful to modify or remove this copyright notice.
+#F* -------------------------------------------------------------------
+#G* Please see the accompanying LICENSE file for further information.
+#H* -------------------------------------------------------------------
+#I* Additional authors of this source file include:
+#-*
+#-*
+#-*
+#Z* -------------------------------------------------------------------
+"""
 import pathlib
 import subprocess
 from typing import Optional
