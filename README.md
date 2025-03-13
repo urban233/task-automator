@@ -38,6 +38,7 @@ complicated tasks.
 - 📚 **Automatic Help Generation** - Built-in help system with hierarchical documentation
 - 🌳 **Hierarchical Commands** - Support for unlimited nested subcommands
 - 🖥 **Cross-Platform** - Works on Windows, Linux, and macOS
+- 📚 **Filesystem & Web utils**: Utility functions for filesystem operations and web
 
 ## Installation
 

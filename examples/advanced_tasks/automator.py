@@ -38,6 +38,14 @@ def build_update_src_only_exe():
 
 
 AUTOMATION_TREE: dict = {
+    "setup-dev-env": {
+        "help": "Installs build dependencies",
+        "func": setup_dev_env
+    },
+    "clean": {
+        "help": "Cleans the inno setup build directory",
+        "func": clean_build_setup_exe
+    },
     "build": {
         "help": "Build components",
         "subcommands": {
