@@ -1,11 +1,11 @@
 [project]
-name = "py-automator"
-version = "0.1.0"
-description = ""
+name = "task-automator"
+version = "0.1.1"
+description = "Task-Automator is a modern Python framework for building declarative command-line interfaces with nested subcommands, designed for automation workflows and build systems."
 authors = [
     {name = "Martin Urban",email = "martin.urban@studmail.w-hs.de"}
 ]
-license = {text = "LICENSE"}
+license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

@@ -1,6 +1,6 @@
 """
 #A* -------------------------------------------------------------------
-#B* This file contains source code for the Py-Automator python package.
+#B* This file contains source code for the Task-Automator python package.
 #-* Python module for the automator class.
 #-* -------------------------------------------------------------------
 #C* Copyright 2025 by Martin Urban.

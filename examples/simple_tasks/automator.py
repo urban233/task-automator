@@ -1,6 +1,6 @@
 """
 #A* -------------------------------------------------------------------
-#B* This file contains source code for the Py-Automator python package.
+#B* This file contains source code for the Task-Automator python package.
 #-* Python module for an consumer example.
 #-* -------------------------------------------------------------------
 #C* Copyright 2025 by Martin Urban.
@@ -68,5 +68,5 @@ AUTOMATION_TREE: dict = {
 
 
 if __name__ == '__main__':
-    from py_automator import automator
+    from task_automator import automator
     automator.Automator(AUTOMATION_TREE).run()

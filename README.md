@@ -1,4 +1,4 @@
-# Py-Automator - Declarative CLI Automation Framework
+# Task-Automator - Declarative CLI Automation Framework
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
@@ -9,7 +9,7 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 [**Overview**](#overview)
-| [**What is Py-Automator?**](#what-is-py-automator)
+| [**What is Task-Automator?**](#what-is-task-automator)
 | [**Features**](#features)
 | [**Installation**](#installation)
 | [**Build**](#build)
@@ -17,18 +17,18 @@
 | [**License**](#license)
 
 > [!IMPORTANT]
-> 📣 **As of March 2025 Py-Automator is still in early development.** 📣
+> 📣 **As of March 2025 Task-Automator is still in early development.** 📣
 >
 >
-> Py-Automator is a best-effort open project library. This means that support is not
+> Task-Automator is a best-effort open project library. This means that support is not
 > guaranteed and how long the project will be maintained is unknown.
 
-## What is Py-Automator?
+## What is Task-Automator?
 
-> Py-Automator is a modern Python framework for building declarative command-line interfaces<br> 
+> Task-Automator is a modern Python framework for building declarative command-line interfaces<br> 
 > with nested subcommands, designed for automation workflows and build systems.
 
-Py-Automator is implemented in pure Python that enables scripting of more 
+Task-Automator is implemented in pure Python that enables scripting of more 
 complicated tasks.
 
 
@@ -41,14 +41,14 @@ complicated tasks.
 
 ## Installation
 
-You can use pip to install Py-Automator
+You can use pip to install Task-Automator
 ```shell
-pip install py-automator
+pip install task-automator
 ```
 
 ## Build
 
-Py-Automator uses Poetry for its build process. To build the wheel file 
+Task-Automator uses Poetry for its build process. To build the wheel file 
 and source distribution run:
 ```shell
 poetry build
@@ -61,32 +61,34 @@ Create your command structure in a Python module:
 ```python
 ...
 
+
 def setup_dev_env():
-    """Initialize development environment"""
-    print("Installing dependencies...")
+  """Initialize development environment"""
+  print("Installing dependencies...")
+
 
 AUTOMATION_TREE = {
-    "setup-dev-env": {
-        "help": "Initialize development environment",
-        "func": setup_dev_env
-    },
-    "build": {
-        "help": "Build artifacts",
-        "subcommands": {
-            "win-package": {
-                "help": "Create Windows deployment package",
-                "func": build_windows_package
-            },
-            "setup-exe": {
-                "help": "Generate installer executable",
-                "func": create_installer
-            }
-        }
+  "setup-dev-env": {
+    "help": "Initialize development environment",
+    "func": setup_dev_env
+  },
+  "build": {
+    "help": "Build artifacts",
+    "subcommands": {
+      "win-package": {
+        "help": "Create Windows deployment package",
+        "func": build_windows_package
+      },
+      "setup-exe": {
+        "help": "Generate installer executable",
+        "func": create_installer
+      }
     }
+  }
 }
 
 if __name__ == "__main__":
-  from py_automator import automator
+  from task_automator import automator
   automator.Automator(AUTOMATION_TREE).run()
 ```
 

@@ -1,6 +1,6 @@
 """
 #A* -------------------------------------------------------------------
-#B* This file contains source code for the Py-Automator python package.
+#B* This file contains source code for the Task-Automator python package.
 #-* Python module for an example automation tree.
 #-* -------------------------------------------------------------------
 #C* Copyright 2025 by Martin Urban.
@@ -15,7 +15,7 @@
 #-*
 #Z* -------------------------------------------------------------------
 """
-from py_automator.examples.automations import *
+from task_automator.examples.automations import *
 
 # Command structure definition
 AUTOMATION_TREE = {
