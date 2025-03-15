@@ -1,15 +1,20 @@
 [project]
 name = "task-automator"
-version = "0.2.1"
+version = "0.2.2"
 description = "Task-Automator is a modern Python framework for building declarative command-line interfaces with nested subcommands, designed for automation workflows and build systems."
 authors = [
     {name = "Martin Urban",email = "martin.urban@studmail.w-hs.de"}
 ]
-license = {file = "LICENSE"}
+license = {text = "BSD-3-Clause"}
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
 ]
+
+[project.urls]
+homepage = "https://github.com/urban233/task-automator"
+repository = "https://github.com/urban233/task-automator"
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
