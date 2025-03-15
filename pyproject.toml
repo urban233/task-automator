@@ -1,6 +1,6 @@
 [project]
 name = "task-automator"
-version = "0.2.2"
+version = "0.2.3"
 description = "Task-Automator is a modern Python framework for building declarative command-line interfaces with nested subcommands, designed for automation workflows and build systems."
 authors = [
     {name = "Martin Urban",email = "martin.urban@studmail.w-hs.de"}
