@@ -22,4 +22,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - name: Deploy to GitHub Pages
+        working-directory: ./docs/website
+        run: |
+          mkdocs gh-deploy --force
