@@ -1,6 +1,8 @@
 # Task-Automator - Declarative CLI Automation Framework
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![PyPI](https://img.shields.io/badge/PyPI-v0.2.3-blue.svg)](https://pypi.org/project/task-automator/)
+
 
 ### Supported Platforms
 
@@ -16,12 +18,11 @@
 | [**Defining Commands**](#defining-commands)
 | [**License**](#license)
 
-> [!IMPORTANT]
-> 📣 **As of March 2025 Task-Automator is still in early development.** 📣
->
->
-> Task-Automator is a best-effort open project library. This means that support is not
-> guaranteed and how long the project will be maintained is unknown.
+!!! warning "IMPORTANT"
+
+    Task-Automator is a best-effort open project library. This means that support is not
+    guaranteed and how long the project will be maintained is unknown.
+
 
 ## What is Task-Automator?
 
