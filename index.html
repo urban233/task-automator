@@ -1,0 +1,568 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://urban233.github.io/task-automator/">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Task-Automator</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#task-automator-declarative-cli-automation-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Task-Automator" class="md-header__button md-logo" aria-label="Task-Automator" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Task-Automator
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Task-Automator - Declarative CLI Automation Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Task-Automator" class="md-nav__button md-logo" aria-label="Task-Automator" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Task-Automator
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Task-Automator - Declarative CLI Automation Framework
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Task-Automator - Declarative CLI Automation Framework
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-task-automator" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Task-Automator?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#important-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-task-automator" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Task-Automator?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#important-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="task-automator-declarative-cli-automation-framework">Task-Automator - Declarative CLI Automation Framework</h1>
+<p><a href="https://www.python.org/"><img alt="Python Version" src="https://img.shields.io/badge/python-3.11%2B-blue.svg" /></a>
+<a href="https://opensource.org/licenses/BSD-3-Clause"><img alt="License" src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg" /></a>
+<a href="https://pypi.org/project/task-automator/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-v0.2.3-blue.svg" /></a></p>
+<h3 id="supported-platforms">Supported Platforms</h3>
+<p><img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&amp;logo=windows&amp;logoColor=white" />
+<img alt="macOS" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&amp;logo=macos&amp;logoColor=F0F0F0" />
+<img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" /></p>
+<p><a href="#overview"><strong>Overview</strong></a>
+| <a href="#what-is-task-automator"><strong>What is Task-Automator?</strong></a>
+| <a href="#features"><strong>Features</strong></a>
+| <a href="#installation"><strong>Installation</strong></a>
+| <a href="#build"><strong>Build</strong></a>
+| <a href="#defining-commands"><strong>Defining Commands</strong></a>
+| <a href="#license"><strong>License</strong></a></p>
+<div class="admonition warning">
+<p class="admonition-title">IMPORTANT</p>
+<p>Task-Automator is a best-effort open project library. This means that support is not
+guaranteed and how long the project will be maintained is unknown.</p>
+</div>
+<h2 id="what-is-task-automator">What is Task-Automator?</h2>
+<blockquote>
+<p>Task-Automator is a modern Python framework for building declarative command-line interfaces<br>
+with nested subcommands, designed for automation workflows and build systems.</p>
+</blockquote>
+<p>Task-Automator is implemented in pure Python that enables scripting of more
+complicated tasks.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>🚀 <strong>Declarative Command Tree</strong> - Define CLI structure through simple nested dictionaries</li>
+<li>🛠 <strong>Zero Boilerplate</strong> - Focus on business logic, not argument parsing</li>
+<li>📚 <strong>Automatic Help Generation</strong> - Built-in help system with hierarchical documentation</li>
+<li>🌳 <strong>Hierarchical Commands</strong> - Support for unlimited nested subcommands</li>
+<li>🖥 <strong>Cross-Platform</strong> - Works on Windows, Linux, and macOS</li>
+<li>📚 <strong>Filesystem &amp; Web utils</strong>: Utility functions for filesystem operations and web</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>You can use pip to install Task-Automator
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>task-automator
+</code></pre></div></p>
+<h2 id="build">Build</h2>
+<p>Task-Automator uses Poetry for its build process. To build the wheel file
+and source distribution run:
+<div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>build
+</code></pre></div></p>
+<h2 id="defining-commands">Defining Commands</h2>
+<p>Create your automation structure in a Python module (like <code>my_automator.py</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">build_macos_wheel</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">build_macos_exe</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">build_macos_so</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">run_pytest</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dev_env</span>
+
+
+<span class="n">AUTOMATION_TREE</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;setup&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Setup automations&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;subcommands&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;dev-env&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Sets up the development environment&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;func&quot;</span><span class="p">:</span> <span class="n">dev_env</span><span class="o">.</span><span class="n">setup_dev_env</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;build&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Build targets&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;subcommands&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;wheel&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Builds the Python wheel file&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;func&quot;</span><span class="p">:</span> <span class="n">build_macos_wheel</span><span class="o">.</span><span class="n">build_wheel</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;exe&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Creates a frozen Python application&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;func&quot;</span><span class="p">:</span> <span class="n">build_macos_exe</span><span class="o">.</span><span class="n">build</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;so&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Compiles the _cmd module from source&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;func&quot;</span><span class="p">:</span> <span class="n">build_macos_so</span><span class="o">.</span><span class="n">build_cmd_module</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;test&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Runs all tests under the tests/ directory using pytest.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;func&quot;</span><span class="p">:</span> <span class="n">run_pytest</span><span class="o">.</span><span class="n">run_pytest_suite</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+  <span class="kn">from</span><span class="w"> </span><span class="nn">task_automator</span><span class="w"> </span><span class="kn">import</span> <span class="n">automator</span>
+  <span class="n">automator</span><span class="o">.</span><span class="n">Automator</span><span class="p">(</span><span class="n">AUTOMATION_TREE</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="important-note">Important Note</h3>
+<p>If you connect your automation functions in the tree using the <code>func</code> key,
+you <strong>must NOT</strong> add parenthesis after the function name! Otherwise, it will
+sequentially execute your tree and ignore all passed arguments.</p>
+<h2 id="license">License</h2>
+<p>This project is licensed under the BSD-3 License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
