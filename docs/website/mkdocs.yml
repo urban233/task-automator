@@ -1,4 +1,18 @@
-site_name: My site
-site_url: https://mydomain.org/mysite
+site_name: Task-Automator
+site_url: https://urban233.github.io/task-automator/
 theme:
   name: material
+  #logo: assets/logo256.png
+  #favicon: assets/logo256.png
+  palette:
+    primary: green
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
+
+plugins: [] # Hides the top search bar
